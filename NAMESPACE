@@ -1,0 +1,8 @@
+S3method(print, ishihara)
+S3method(plot, ishihara)
+
+export(plot.ishihara, print.ishihara)
+
+importFrom(plotrix, draw.circle)
+importFrom(graphics, plot.new, plot.window)
+importFrom(methods, hasArg)

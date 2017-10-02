@@ -1,0 +1,16 @@
+Package: ishihara
+Version: 0.1
+Date: 2017-10-02
+Title: Ishihara color-vision test
+Author: Liam J. Revell
+Maintainer: Liam J. Revell <liam.revell@umb.edu>
+Depends: R (>= 3.2.0)
+Imports: plotrix, graphics, methods
+Suggests: 
+ZipData: no
+Description: Package is for the Ishihara color-vision test.
+License: GPL (>= 2)
+URL: http://github.com/liamrevell/ishihara
+Packaged: 2017-10-02 12:00:00 EST
+Repository: 
+Date/Publication: 2017-10-02 12:00:00 EST
