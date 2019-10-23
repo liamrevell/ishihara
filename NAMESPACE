@@ -3,6 +3,6 @@ S3method(plot, ishihara)
 
 export(plot.ishihara, print.ishihara)
 
-importFrom(graphics, plot.new, plot.window, symbols)
+importFrom(graphics, plot.new, plot.window, symbols, par)
 importFrom(methods, hasArg)
 importFrom(phytools, make.transparent)
