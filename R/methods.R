@@ -20,6 +20,7 @@ plot.ishihara<-function(x,...){
 	plot.window(xlim=lims,ylim=lims,asp=1)
 	symbols(x=xx,y=yy,circles=rr,bg=color,fg=color,
 		inches=FALSE,add=TRUE)
+	box()
 }
 
 print.ishihara<-function(x,...){
