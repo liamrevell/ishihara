@@ -16,7 +16,10 @@ plot.ishihara<-function(x,...){
 		make.transparent(x,alpha),alpha=alpha)
 	plot.new()
 	par(mar=mar)
-	plot.window(xlim=range(xx),ylim=range(yy),asp=1)
+	ef<-0.1*diff(range(c(xx,yy)))
+	lims<-range(c(xx,yy))+c(-ef,ef)
+	print(lims)
+	plot.window(xlim=lims,ylim=lims,asp=1)
 	symbols(x=xx,y=yy,circles=rr,bg=color,fg=color,
 		inches=FALSE,add=TRUE)
 }
