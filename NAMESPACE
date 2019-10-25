@@ -1,8 +1,11 @@
 S3method(print, ishihara)
 S3method(plot, ishihara)
 
-export(plot.ishihara, print.ishihara)
+export(make.ishihara, plot.ishihara, print.ishihara)
 
-importFrom(graphics, plot.new, plot.window, symbols, par, box)
+importFrom(graphics, plot.new, plot.window, symbols, par, box, lines, locator, points, rasterImage, rect, strheight, text)
 importFrom(methods, hasArg)
 importFrom(phytools, make.transparent)
+importFrom(grDevices, dev.flush, rgb)
+importFrom(utils, flush.console)
+importFrom(plotrix, textbox)
