@@ -14,9 +14,9 @@ plot.ishihara<-function(x,...){
 	ii<-setdiff(1:attr(x,"nshapes"),attr(x,"pattern"))
 	color[ii]<-sapply(color[ii],function(x,alpha)
 		make.transparent(x,alpha),alpha=alpha)
-	plot.new()
 	par(mar=mar)
-	lims<-c(-25,325)
+	lims<-c(0,300)
+	plot.new()
 	plot.window(xlim=lims,ylim=lims,asp=1)
 	symbols(x=xx,y=yy,circles=rr,bg=color,fg=color,
 		inches=FALSE,add=TRUE)
